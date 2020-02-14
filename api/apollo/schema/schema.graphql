@@ -1,0 +1,7 @@
+# import Query.user from "generated/prisma.graphql"
+# import Query.users from "generated/prisma.graphql"
+# import Query.posts from "generated/prisma.graphql"
+# import Query.post from "generated/prisma.graphql"
+# import Mutation.createUser from "generated/prisma.graphql"
+# import Mutation.createPost from "generated/prisma.graphql"
+# import Mutation.createComment from "generated/prisma.graphql"

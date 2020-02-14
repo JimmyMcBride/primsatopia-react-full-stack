@@ -1,0 +1,25 @@
+type User {
+  id: ID! @id
+  username: String! @unique
+  # admin: Boolean @default(value: false)
+  posts: [Post!]!
+  comments: [Comment!]!
+}
+
+type Post {
+  id: ID! @id
+  # createdAt: DateTime! @createdAt
+  # updatedAt: DateTime! @updatedAt
+  title: String!
+  # published: Boolean! @default(value: false)
+  author: User
+  comments: [Comment!]
+}
+
+type Comment {
+  id: ID! @id
+  # createdAt: DateTime! @createdAt
+  text: String!
+  post: Post!
+  writtenBy: User!
+}
